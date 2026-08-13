@@ -58,6 +58,8 @@ export default defineConfig({
   ].filter(Boolean),
   devServer: {
     port: 5030,
+    host: '0.0.0.0',
+    allowedHosts: 'all',
     headers: { 'Access-Control-Allow-Origin': '*' },
     proxy: [{ context: ['/core', '/api', '/health'], target: 'http://127.0.0.1:3000', changeOrigin: false }],
   },
