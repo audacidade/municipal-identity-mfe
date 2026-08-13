@@ -1,0 +1,30 @@
+{
+  "name": "municipal-identity-mfe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development rspack serve --config rspack.config.ts",
+    "build": "tsc -b && NODE_ENV=production rspack build --config rspack.config.ts"
+  },
+  "dependencies": {
+    "@municipal/tokens": "file:../municipal-design-system/packages/tokens",
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.2.8",
+    "@rspack/core": "^1.2.8",
+    "@rspack/plugin-react-refresh": "^1.0.1",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.7.3"
+  }
+}
